@@ -25,7 +25,7 @@ export default new Vuex.Store({
         commit('loginSuccessful', "Welcome to VUE JS Demo APP")
       }
       else{
-        commit('loginFailed', "Password in incorrect")
+        commit('loginFailed', "Password is incorrect")
       }
     }
   }
