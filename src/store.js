@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+//Vuex is used for stage management
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  //Defining state, mutations and actions for the store
   state: {
     loginSuccessful: false,
     loginError: false
@@ -21,6 +23,7 @@ export default new Vuex.Store({
   actions: {
     doLogin({commit}, loginData){
      // let user = JSON.parse(localStorage.getItem('user'));
+     //Here login verfication call can be made using backend service
       if(loginData.password == 'admin123'){
         commit('loginSuccessful', "Welcome to VUE JS Demo APP")
       }
